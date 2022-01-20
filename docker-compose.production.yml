@@ -1,0 +1,11 @@
+version: "3.9"
+
+services:
+  app:
+    container_name: app
+    restart: always
+    build: .
+    environment:
+      - PORT=8000
+    ports:
+      - "8000:8000"

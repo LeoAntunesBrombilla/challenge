@@ -1,0 +1,15 @@
+version: "3.9"
+
+services:
+  app:
+    container_name: app_dev
+    restart: always
+    build:
+      context: .
+      dockerfile: Dockerfile.dev
+    environment:
+      - PORT=4000
+    ports:
+      - "4000:4000"
+    volumes:
+      - .:/usr/app
