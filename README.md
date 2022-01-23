@@ -20,6 +20,7 @@ Este projeto tem um fluxo de CI/CD completo. Desde a hora do commit (utilizando 
 - Node js
 - Express 
 - supertest
+- jest
 - husky
 - mongodb
 - docker
