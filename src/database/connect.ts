@@ -7,7 +7,6 @@ type DBInput = {
 const connect = async ({ db }: DBInput) => {
   try {
     mongoose.connect(db);
-    console.log('connected');
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
   } catch (error: any) {
     return process.exit(1);
