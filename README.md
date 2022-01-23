@@ -34,12 +34,18 @@ Para utilizar o projeto você deve:
 
 - clona-lo na sua máquina
 - `npm i` (utilizer  a versão 16 do node)
+- criar um arquivo .env na raiz do projeto e colocar os seguintes links: 
+- `DB_URL = "mongodb+srv://admin:admin@cluster0.v0fjz.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"`
+- `DB_URL_TEST = "mongodb+srv://admin:admin@cluster0.muun2.mongodb.net/Cluster0?retryWrites=true&w=majority"`
 - `npm run dev`
 - a porta é (caso não esteja sendo utilizada) 8000
 
 Também pode fazer uso do docker rodando o comando
 
 - clona-lo na sua máquina
+- criar um arquivo .env na raiz do projeto e colocar os seguintes links: 
+- `DB_URL = "mongodb+srv://admin:admin@cluster0.v0fjz.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"`
+- `DB_URL_TEST = "mongodb+srv://admin:admin@cluster0.muun2.mongodb.net/Cluster0?retryWrites=true&w=majority"`
 - `npm i` (utilizer  a versão 16 do node)
 - `docker-compose -f docker-compose.development.yml up --build`
 - a porta é (caso não esteja sendo utilizada) 4000
@@ -52,5 +58,6 @@ Pontos conluídos:
 
 Link da aplicação: https://challenge-coodesh-node.herokuapp.com/
 
+### PS: Só deixarei os bancos do mongodb de pé até o dia 26!
 
 | This is a challenge by Coodesh
