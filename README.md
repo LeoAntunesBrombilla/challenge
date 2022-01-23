@@ -8,7 +8,11 @@
 [![Technical Debt](https://sonarcloud.io/api/project_badges/measure?project=LeoAntunesBrombilla_challenge&metric=sqale_index)](https://sonarcloud.io/summary/new_code?id=LeoAntunesBrombilla_challenge)
 
 
-#### Desafio para medir conhecimentos de desenvolvimento back end utilizando a api [Space Flight News](https://api.spaceflightnewsapi.net/v3/documentation).
+#### Desafio para medir conhecimentos de desenvolvimento back end utilizando a api [Space Flight News](https://api.spaceflightnewsapi.net/v3/documentation). 
+
+#### Breve descrição do fluxo
+
+Este projeto tem um fluxo de CI/CD completo. Desde a hora do commit (utilizando husky), onde não passam commits caso o código não esteja coberto de teste. Em seguida do push o github action começa por fazer o build do projeto para javascript e em seguida temos o deploy em um container docker no heroku. Paralelamente o sonarcloud + codecov estão rodando e analisando a qualidade do projeto. Assim que odeploy é finalizado um web hook foi definido de forma que um bot no discord avisa que a nova versão está no ar!
 
 ### Linguagem / Frameworks / Tecnologias usados no projeto
 
@@ -25,16 +29,16 @@
 Para utilizar o projeto você deve:
 
 - clona-lo na sua máquina
-- rodar npm i (utilizer  a versão 16 do node)
-- rodar npm run dev
-- a porta é 8000
+- `npm i` (utilizer  a versão 16 do node)
+- `npm run dev`
+- a porta é (caso não esteja sendo utilizada) 8000
 
 Também pode fazer uso do docker rodando o comando
 
 - clona-lo na sua máquina
-- rodar npm i (utilizer  a versão 16 do node)
-- docker-compose -f docker-compose.development.yml up --build
-- a porta é 4000
+- `npm i` (utilizer  a versão 16 do node)
+- `docker-compose -f docker-compose.development.yml up --build`
+- a porta é (caso não esteja sendo utilizada) 4000
 
 Pontos conluídos: 
 
