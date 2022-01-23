@@ -26,6 +26,7 @@ Este projeto tem um fluxo de CI/CD completo. Desde a hora do commit (utilizando 
 - husky
 - mongodb
 - docker
+- docker-compose
 - heroku
 - github actions
 
