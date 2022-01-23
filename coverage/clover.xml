@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1642953693933" clover="3.2.0">
-  <project timestamp="1642953693933" name="All files">
-    <metrics statements="147" coveredstatements="143" conditionals="1" coveredconditionals="0" methods="39" coveredmethods="39" elements="187" coveredelements="182" complexity="0" loc="147" ncloc="147" packages="10" files="16" classes="16"/>
+<coverage generated="1642954429476" clover="3.2.0">
+  <project timestamp="1642954429476" name="All files">
+    <metrics statements="145" coveredstatements="141" conditionals="1" coveredconditionals="0" methods="39" coveredmethods="39" elements="185" coveredelements="180" complexity="0" loc="145" ncloc="145" packages="10" files="16" classes="16"/>
     <package name="src">
       <metrics statements="16" coveredstatements="15" conditionals="1" coveredconditionals="0" methods="1" coveredmethods="1"/>
       <file name="index.ts" path="/home/leonardo/development/apis/challenge/src/index.ts">
@@ -25,16 +25,15 @@
       </file>
     </package>
     <package name="src.database">
-      <metrics statements="7" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+      <metrics statements="6" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
       <file name="connect.ts" path="/home/leonardo/development/apis/challenge/src/database/connect.ts">
-        <metrics statements="7" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+        <metrics statements="6" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
         <line num="1" count="2" type="stmt"/>
         <line num="7" count="2" type="stmt"/>
         <line num="8" count="2" type="stmt"/>
         <line num="9" count="2" type="stmt"/>
-        <line num="10" count="2" type="stmt"/>
-        <line num="13" count="0" type="stmt"/>
-        <line num="17" count="2" type="stmt"/>
+        <line num="12" count="0" type="stmt"/>
+        <line num="16" count="2" type="stmt"/>
       </file>
     </package>
     <package name="src.modules.articles.model">
@@ -87,17 +86,16 @@
       </file>
     </package>
     <package name="src.modules.articles.useCases.deleteArticle">
-      <metrics statements="12" coveredstatements="12" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="4"/>
+      <metrics statements="11" coveredstatements="11" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="4"/>
       <file name="DeleteArticleController.ts" path="/home/leonardo/development/apis/challenge/src/modules/articles/useCases/deleteArticle/DeleteArticleController.ts">
-        <metrics statements="8" coveredstatements="8" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+        <metrics statements="7" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
         <line num="6" count="2" type="stmt"/>
         <line num="9" count="2" type="stmt"/>
         <line num="11" count="2" type="stmt"/>
         <line num="12" count="2" type="stmt"/>
-        <line num="13" count="2" type="stmt"/>
-        <line num="16" count="1" type="stmt"/>
-        <line num="18" count="1" type="stmt"/>
-        <line num="23" count="2" type="stmt"/>
+        <line num="15" count="1" type="stmt"/>
+        <line num="17" count="1" type="stmt"/>
+        <line num="22" count="2" type="stmt"/>
       </file>
       <file name="DeleteArticleUseCase.ts" path="/home/leonardo/development/apis/challenge/src/modules/articles/useCases/deleteArticle/DeleteArticleUseCase.ts">
         <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>

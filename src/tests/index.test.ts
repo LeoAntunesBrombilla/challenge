@@ -1,7 +1,7 @@
 import request from 'supertest';
 import app from '../index';
 
-describe('GET /', () => {
+describe('[GET]', () => {
   it('Responds with Back-end Challenge 2021 🏅 - Space Flight News', (done) => {
     request(app)
       .get('/')
