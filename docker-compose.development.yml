@@ -2,7 +2,7 @@ version: "3.9"
 
 services:
   app:
-    container_name: app_dev
+    container_name: app_challenge_dev
     restart: always
     build:
       context: .
