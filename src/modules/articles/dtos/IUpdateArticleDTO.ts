@@ -1,22 +1,14 @@
+import { objectLaunchsAndEvents } from './ICreateArticleDTO';
+
 interface IUpdateArticleDTO {
-  featured: false;
-  title: 'string';
-  url: 'string';
-  imageUrl: 'string';
-  newsSite: 'string';
-  summary: 'string';
-  launches: [
-    {
-      id: 'string';
-      provider: 'string';
-    }
-  ];
-  events: [
-    {
-      id: 'string';
-      provider: 'string';
-    }
-  ];
+  featured: boolean;
+  title: string;
+  url: string;
+  imageUrl: string;
+  newsSite: string;
+  summary: string;
+  launches: objectLaunchsAndEvents[];
+  events: objectLaunchsAndEvents[];
 }
 
 export { IUpdateArticleDTO };

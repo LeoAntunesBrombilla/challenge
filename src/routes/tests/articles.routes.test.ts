@@ -1,4 +1,5 @@
 import request from 'supertest';
+import { v4 } from 'uuid';
 import app from '../../index';
 
 const articleCreateTest = {
@@ -54,9 +55,15 @@ describe('[POST] - CREATE', () => {
 
     expect(response.statusCode).toEqual(201);
   });
+
+  it('should not creat an article', async () => {
+    const response = await request(app).post('/article').type('json').send({});
+
+    expect(response.statusCode).toEqual(404);
+  });
 });
 
-describe('[GET] - LIST', () => {
+describe('[GET] - LIST ALL ARTICLES', () => {
   it('should list all articles', async () => {
     const response = await request(app).get('/article').type('json').send();
 
@@ -78,6 +85,15 @@ describe('[GET] - FIND ONE', () => {
 
     expect(response.statusCode).toEqual(201);
   });
+
+  it('should not be able to find and update one article', async () => {
+    const response = await request(app)
+      .get(`/article/${v4()}`)
+      .type('json')
+      .send();
+
+    expect(response.statusCode).toEqual(404);
+  });
 });
 
 describe('[DELETE] - DELETE ONE', () => {
@@ -94,6 +110,15 @@ describe('[DELETE] - DELETE ONE', () => {
 
     expect(response.statusCode).toEqual(201);
   });
+
+  it('should not be able to find and delete one article', async () => {
+    const response = await request(app)
+      .delete(`/article/${v4()}`)
+      .type('json')
+      .send();
+
+    expect(response.statusCode).toEqual(404);
+  });
 });
 
 describe('[PUT] - UPDATE ONE', () => {
@@ -109,5 +134,14 @@ describe('[PUT] - UPDATE ONE', () => {
       .send(articleUpdateTest);
 
     expect(response.statusCode).toEqual(201);
+  });
+
+  it('should not be able to find and update one article', async () => {
+    const response = await request(app)
+      .put(`/article/${v4()}`)
+      .type('json')
+      .send(articleUpdateTest);
+
+    expect(response.statusCode).toEqual(404);
   });
 });

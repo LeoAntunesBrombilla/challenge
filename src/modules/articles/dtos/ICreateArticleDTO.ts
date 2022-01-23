@@ -1,23 +1,18 @@
+export type objectLaunchsAndEvents = {
+  id: string;
+  provider: string;
+};
+
 interface ICreateArticleDTO {
-  featured: false;
-  title: 'string';
-  url: 'string';
-  imageUrl: 'string';
-  newsSite: 'string';
-  summary: 'string';
+  featured: boolean;
+  title: string;
+  url: string;
+  imageUrl: string;
+  newsSite: string;
+  summary: string;
   publishedAt: Date;
-  launches: [
-    {
-      id: 'string';
-      provider: 'string';
-    }
-  ];
-  events: [
-    {
-      id: 'string';
-      provider: 'string';
-    }
-  ];
+  launches: objectLaunchsAndEvents[];
+  events: objectLaunchsAndEvents[];
 }
 
 export { ICreateArticleDTO };

@@ -6,8 +6,9 @@ class DeleteArticleController {
   constructor(private deleteArticleUseCase: DeleteArticleUseCase) {}
 
   async handle(request: Request, response: Response): Promise<any> {
-    const { id } = request.params;
+    const id = request.params.id;
 
+    console.log(id);
     try {
       const articleDeleted = await this.deleteArticleUseCase.execute({
         id: String(id)
