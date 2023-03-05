@@ -1,11 +1,6 @@
 # Challenge Space Flight News
 
 [![codecov](https://codecov.io/gh/LeoAntunesBrombilla/challenge/branch/main/graph/badge.svg?token=3NSCM4OGJG)](https://codecov.io/gh/LeoAntunesBrombilla/challenge)
-[![Bugs](https://sonarcloud.io/api/project_badges/measure?project=LeoAntunesBrombilla_challenge&metric=bugs)](https://sonarcloud.io/summary/new_code?id=LeoAntunesBrombilla_challenge)
-[![Duplicated Lines (%)](https://sonarcloud.io/api/project_badges/measure?project=LeoAntunesBrombilla_challenge&metric=duplicated_lines_density)](https://sonarcloud.io/summary/new_code?id=LeoAntunesBrombilla_challenge)
-[![Lines of Code](https://sonarcloud.io/api/project_badges/measure?project=LeoAntunesBrombilla_challenge&metric=ncloc)](https://sonarcloud.io/summary/new_code?id=LeoAntunesBrombilla_challenge)
-[![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=LeoAntunesBrombilla_challenge&metric=sqale_rating)](https://sonarcloud.io/summary/new_code?id=LeoAntunesBrombilla_challenge)
-[![Technical Debt](https://sonarcloud.io/api/project_badges/measure?project=LeoAntunesBrombilla_challenge&metric=sqale_index)](https://sonarcloud.io/summary/new_code?id=LeoAntunesBrombilla_challenge)
 
 
 #### Desafio para medir conhecimentos de desenvolvimento back end utilizando a api [Space Flight News](https://api.spaceflightnewsapi.net/v3/documentation). 
@@ -35,17 +30,12 @@ Para utilizar o projeto você deve:
 - clona-lo na sua máquina
 - `npm i` (utilizer  a versão 16 do node)
 - criar um arquivo .env na raiz do projeto e colocar os seguintes links: 
-- `DB_URL = "mongodb+srv://admin:admin@cluster0.v0fjz.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"`
-- `DB_URL_TEST = "mongodb+srv://admin:admin@cluster0.muun2.mongodb.net/Cluster0?retryWrites=true&w=majority"`
 - `npm run dev`
 - a porta é (caso não esteja sendo utilizada) 8000
 
 Também pode fazer uso do docker rodando o comando
 
 - clona-lo na sua máquina
-- criar um arquivo .env na raiz do projeto e colocar os seguintes links: 
-- `DB_URL = "mongodb+srv://admin:admin@cluster0.v0fjz.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"`
-- `DB_URL_TEST = "mongodb+srv://admin:admin@cluster0.muun2.mongodb.net/Cluster0?retryWrites=true&w=majority"`
 - `npm i` (utilizer  a versão 16 do node)
 - `docker-compose -f docker-compose.development.yml up --build`
 - a porta é (caso não esteja sendo utilizada) 4000
